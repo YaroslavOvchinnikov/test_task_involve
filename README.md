@@ -16,6 +16,7 @@ pip install -r requirements.txt
 ```
 
 The project uses a SQLite database if you don't have this database installed, you can download it from https://www.sqlite.org/
+
 Run the following command
 ```
 pip install sqlite3
