@@ -1,0 +1,13 @@
+body{
+    display: flex;
+    justify-content: center;
+    font-family: sans-serif;
+    background: linear-gradient(105deg,#71b7e6, #B0C4DE);
+    color: black;
+}
+
+p {
+    font-size: 17px;
+    margin-top: 35px;
+    letter-spacing: 2px;
+}

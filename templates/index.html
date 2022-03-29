@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link type="text/css" href="{{url_for('static', filename='index.css')}}" rel="stylesheet"/>
+</head>
+<body>
+
+    <div class='container'>
+        {% block content %}
+        {%for msg in get_flashed_messages() %}
+        <div class="flash">{{msg}}</div>
+        {% endfor %}
+        {% endblock %}
+        <div class='title'>Payment Request</div>
+        <form action="/" method="POST">
+            <div class='details'>
+                <div class='input-box'>
+                    <span class='detail'>Amount:</span>
+                    <input required name="sum" type="text"/>
+                </div>
+                <div class='input-box'>
+                    <span class='detail'>Select currency:</span>
+                    <select name="currency">
+                        <option value="EUR">EUR</option>
+                        <option value="USD">USD</option>
+                        <option value="RUB">RUB</option>
+                    </select>
+                </div>
+                <div class='input-box'>
+                    <textarea name="comment" cols="40" rows="8"placeholder="Comment.."></textarea>
+                </div>
+            </div>
+            <div class='button'>
+                <input name="submit" type="submit" value="Submit"/>
+            </div>
+        </form>
+    </div>
+
+
+
+</body>
+</html>

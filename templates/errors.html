@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Error</title>
+    <link type="text/css" href="{{url_for('static', filename='errors.css')}}" rel="stylesheet"/>
+</head>
+<body>
+  <div class="container">
+    <h2>An error occurred while processing the form</h2>
+    <p>Message: {{message}}</p>
+    <p>Error code: {{error_code}}</p>
+  </div>
+</body>
+</html>

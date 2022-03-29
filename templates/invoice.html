@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Invoice</title>
+    <link type="text/css" href="{{url_for('static', filename='invoice.css')}}" rel="stylesheet"/>
+</head>
+<body>
+<div class="info">
+    <h2>Information about payment</h2>
+    <form method="{{method}}" action="https://perfectmoney.com/api/step1.asp">
+        <input name="lang" value="ru" />
+        <input name="BAGGAGE_FIELDS" value="{{BAGGAGE_FIELDS}}">
+        <input name="NOPAYMENT_URL" value="{{NOPAYMENT_URL}}">
+        <input name="NOPAYMENT_URL_METHOD" value="{{NOPAYMENT_URL_METHOD}}">
+        <input name="PAYEE_ACCOUNT" value="{{PAYEE_ACCOUNT}}">
+        <input name="PAYEE_NAME" value="{{PAYEE_NAME}}">
+        <input name="PAYMENT_AMOUNT" value="{{PAYMENT_AMOUNT}}">
+        <input name="PAYMENT_ID" value="{{PAYMENT_ID}}">
+        <input name="PAYMENT_UNITS" value="{{PAYMENT_UNITS}}">
+        <input name="PAYMENT_URL" value="{{PAYMENT_URL}}">
+        <input name="PAYMENT_URL_METHOD" value="{{PAYMENT_URL_METHOD}}">
+        <input name="STATUS_URL" value="{{STATUS_URL}}">
+        <div class="button">
+            <input type="submit"/>
+        </div>
+    </form>
+</div>
+
+</body>
+</html>

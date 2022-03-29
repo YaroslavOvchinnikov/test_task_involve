@@ -1,0 +1,31 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Sans-Serif;
+    background: linear-gradient(105deg,#71b7e6, #B0C4DE)
+}
+.button{
+margin-top: 50px;
+}
+.button button{
+    font-family: Sans-Serif;
+    letter-spacing: 1px;
+    height: 40px;
+    width: 200px;
+    font-size: 18px;
+    color: white;
+    outline: 0;
+    border-radius: 3px;
+    border:2px solid grey;
+    background: linear-gradient(105deg,#71b7e6, #1E90FF);
+
+}
+
+.button button:hover{
+    background: #4169E1;
+
+}
+.button input:active{
+    background: linear-gradient(15deg,#71b7e6, #1E90FFE);
+}
