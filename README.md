@@ -31,7 +31,7 @@ python app.py
 
 
 
-## Project content
+## Project contents
 
 app.py - contains the main functionality of the project.
 
