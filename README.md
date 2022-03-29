@@ -37,6 +37,6 @@ app.py - contains the main functionality of the project.
 
 FDataBase.py - the file contains the code for working with the database.
 
-Static - folder with styles for site pages.
+static - folder with styles for site pages.
 
-Templates - folder with html files.
+templates - folder with html files.
