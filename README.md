@@ -1,13 +1,13 @@
 ### Implementation of a flask server with the ability to accept applications for payment and redirect to payment systems depending on the selected currency
 
 ## Technology
-***
+
 - Python
 - Flask
 - SQLite
 
 ## Install
-***
+
 Run the following commands to bootstrap your environment
 ```   
 git clone https://github.com/YaroslavOvchinnikov/test_task_involve
@@ -23,7 +23,7 @@ pip install sqlite3
 ```
 
 ## Start application
-***
+
 Run the following command
 ```
 python app.py
@@ -32,7 +32,7 @@ python app.py
 
 
 ## Project content
-***
+
 app.py - contains the main functionality of the project.
 
 FDataBase.py - the file contains the code for working with the database.
